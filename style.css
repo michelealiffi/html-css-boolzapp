@@ -23,11 +23,6 @@ header .content-head {
     display: flex;
 }
 
-img {
-    width: 17%;
-    border-radius: 100px;
-}
-
 li {
     display: flex;
 }
@@ -133,17 +128,49 @@ footer.message {
     margin-left: 20px;
 }
 
+.logo-div {
+    display: none;
+}
+
+.smile {
+    display: none;
+}
+
+.microphone {
+    display: none;
+}
+
 @media screen and (min-width: 576px) {
+    .sidebar img {
+        width: 15%;
+        border-radius: 100px;
+        height: 70%;
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
 
     .sidebar {
+        margin-right: -310px;
         flex-shrink: 0;
         display: flex;
         flex-direction: column;
         overflow: hidden;
+        border-right: 1px solid lightgray;
+        background-color: white;
     }
 
     .chats {
         overflow-y: auto;
+    }
+
+    .chats li {
+        border: 1px solid;
+        border-color: rgb(243, 243, 243);
+    }
+
+    .chats img {
+        width: 13%;
     }
 
     .info {
@@ -156,6 +183,77 @@ footer.message {
 
     .search {
         display: none;
+    }
+
+    .logo-div {
+        display: block;
+        margin-left: 250px;
+    }
+
+    header img.glass {
+        width: 13%;
+    }
+
+    header img.clip {
+        width: 12%;
+    }
+
+    header img.ellipsis {
+        width: 4%;
+    }
+
+    .content-head {
+        border-left: 1px solid;
+        border-color: lightgray;
+    }
+
+    .content header p {
+        margin-right: 200px;
+    }
+
+    .conversation li.left-white{
+        margin-bottom: 370px;
+    }
+
+    .content-head .mike {
+        width: 6%;
+    }
+
+    .message {
+        display: flex;
+    }
+
+    .smile {
+        display: block;
+        width: 2%;
+        margin-left: 25px;
+        margin-right: 5px;
+    }
+
+    .microphone {
+        display: block;
+        width: 2%;
+        margin-left: 5px;
+    }
+
+    footer input {
+        width: 780px;
+    }
+
+    .conversation li {
+        width: 50%;
+    }
+
+    .conversation li.right-green {
+        margin-left: 400px;
+    }
+
+    .conversation li .symbol {
+        margin-left: 400px;
+    }
+
+    .conversation li .hour {
+        margin-bottom: -10px;
     }
 }
 
