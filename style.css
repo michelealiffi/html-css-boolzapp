@@ -33,14 +33,62 @@ li {
 }
 
 input {
-    width: 90%;
-    height: 40px;
-    margin: auto;
+    width: 20%;
 }
 
 .conversation {
     height: calc(100% - 140px);
     overflow-y: auto;
+}
+
+.conversation li {
+    width: 66%;
+}
+
+.conversation li.right-green{
+    background-color: rgb(212, 249, 187);
+    border-radius: 10px;
+    margin-top: 25px;
+    margin-left: 130px;
+    margin-bottom: 10px;
+    padding: 15px;
+}
+
+.conversation li.left-white{
+    background-color: white;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-bottom: 368px;
+    padding: 15px;
+}
+
+.conversation li .symbol {
+    color: lightgray;
+    font-size: 30px;
+    position: absolute;
+    margin-left: 270px;
+    margin-top: -20px;
+}
+
+.conversation li .hour {
+    font-size: 10px;
+    margin-top: 130px;
+    margin-right: -10px;
+    margin-bottom: -20px;
+    color: lightgray;
+}
+
+footer input {
+    width: 90%;
+    height: 50px;
+    margin: auto 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border-color: transparent;
+}
+
+footer input::placeholder {
+    padding: 10px;
 }
 
 footer.message {
@@ -62,6 +110,27 @@ footer.message {
 .content {
     flex-grow: 1;
     background-image: url(img/mine.jpg);
+}
+
+.content header img {
+    width: 17%;
+    height: 70%;
+    border-radius: 100px;
+    margin-left: 20px;
+    margin-top: 10px;
+
+}
+
+.content header h2 {
+    font-size: 17px;
+    margin-left: 20px;
+    margin-top: 17px;
+}
+
+.content header p {
+    width: 100%;
+    color: gray;
+    margin-left: 20px;
 }
 
 @media screen and (min-width: 576px) {
