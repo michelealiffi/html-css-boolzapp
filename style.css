@@ -31,6 +31,10 @@ input {
     width: 20%;
 }
 
+.logo-side {
+    display: none;
+}
+
 .conversation {
     height: calc(100% - 140px);
     overflow-y: auto;
@@ -277,14 +281,105 @@ footer.message {
 
     .sidebar {
         width: 350px;
+        margin-right: 0;
     }
 
     .notification {
-        display: block;
+        display: flex;
         background-color: rgb(143, 218, 252);
+        padding-bottom: 5px;
+    }
+
+    .notification img {
+        width: 15%;
+        height: 80%;
+        padding: 10px;
+        background-color: white;
+        margin-right: 20px;
+    }
+
+    .notification h2 {
+        font-size: 15px;
+        margin-top: 20px;
+    }
+
+    .notification p {
+        font-size: 12px;
+        color: gray;
+        text-decoration: underline;
     }
 
     .search {
+        display: flex;
+    }
+
+    .search img {
+        width: 1%;
+        position: absolute;
+        margin-top: -279px;
+        margin-left: 30px;
+    }
+
+    .search input {
+        width: 330px;
+        padding: 7px;
+        margin: 10px;
+    }
+
+    .search input::placeholder {
+        padding: 10px;
+        padding-left: 50px;
+    }
+
+    .logo-side {
         display: block;
+        margin-left: 160px;
+    }
+
+    footer input {
+        width: 570px;
+    }
+
+    .conversation li {
+        width: 70%;
+    }
+
+    .conversation li.right-green {
+        margin-left: 150px;
+    }
+
+    .conversation li.left-white{
+        margin-bottom: 0px;
+    }
+
+    .conversation li .symbol {
+        margin-left: 450px;
+    }
+
+    .info {
+        display: block;
+    }
+
+    .info h2 {
+        font-size: 17px;
+        margin-top: 15px;
+        margin-left: 20px;
+    }
+
+    .info p {
+        color: lightgray;
+        font-size: 14px;
+        margin-left: 20px;
+    }
+
+    .info.hour {
+        color: lightgray;
+        font-size: 12px;
+        margin-top: 10px;
+        margin-left: 50px;
+    }
+
+    .chats li {
+        height: 80px;
     }
 }
